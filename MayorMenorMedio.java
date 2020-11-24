@@ -38,6 +38,13 @@ public class MayorMenorMedio {
         return menor;
     }
 
+    public static void MostrarNumeros(int num1, int num2, int num3, int mayor, int menor, int medio) {
+        System.out.println("Los números introducidos son: " + num1 + ", " + num2 + ", " + num3);
+        System.out.println("El mayor es: " + mayor);
+        System.out.println("El del medio es: " + medio);
+        System.out.println("El menor es: " + menor);
+    }
+
     public static void main(String[] args) {
         // DECLARACION DE VARIABLES
         Scanner sc = new Scanner(System.in);
@@ -55,10 +62,7 @@ public class MayorMenorMedio {
         int mayor = ElMayor(num1, num2, num3);
         int menor = ElMenor(num1, num2, num3);
         int medio = ElMedio(num1, num2, num3, mayor, menor);
-        System.out.println("Los números introducidos son: " + num1 + ", " + num2 + ", " + num3);
-        System.out.println("El mayor es: " + mayor);
-        System.out.println("El del medio es: " + medio);
-        System.out.println("El menor es: " + menor);
+        MostrarNumeros(num1, num2, num3, mayor, menor, medio);
 
     }
 
